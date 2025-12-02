@@ -1,4 +1,6 @@
-export type TYears = 2025;
-export type TDays = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+import type { aocDays, aocYears } from "./constants";
 
-export type TPuzzle = `${TYears}/${TDays}`;
+export type TYear = (typeof aocYears)[number];
+export type TDay = (typeof aocDays)[number];
+
+export type TPuzzle = `${TYear}/${TDay}`;
