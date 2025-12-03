@@ -9,7 +9,7 @@ const startsAt = 50;
 type TInput = Array<{ dir: Dir; amount: number }>;
 type TOutput = number;
 
-const parseInput = (rawInput: string): TInput => {
+export const parseInput = (rawInput: string): TInput => {
 	return rawInput.split("\n").map((line) => ({
 		dir: line.at(0) as Dir,
 		amount: Number(line.slice(1)),

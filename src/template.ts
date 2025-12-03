@@ -5,7 +5,7 @@ import { readExample } from "@/utils";
 type TInput = string;
 type TOutput = string;
 
-const parseInput = (rawInput: string): TInput => {
+export const parseInput = (rawInput: string): TInput => {
 	return rawInput;
 };
 
